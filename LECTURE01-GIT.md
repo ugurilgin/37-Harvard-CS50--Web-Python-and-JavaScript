@@ -9,6 +9,6 @@ Use Git or checkout with SVN using the web URL
 `git clone https://github.com/ygautomo/37-Harvard-CS50--Web-Python-and-JavaScript.git`
 
 ## Lecture 01 Git
-1. Create (001hello.html)[/lecture01-git/hello01.html]
+1. Create [001hello.html](/lecture01-git/hello01.html)
 2. `git add 001hello.html`
 3. `git commit -m 'Added 001hello.html`

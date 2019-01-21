@@ -10,13 +10,13 @@ Use Git or checkout with SVN using the web URL
 
 ## Lecture 01 Git
 ### Case 01 Create [001hello.html](/lecture01-git/001hello.html) and push into github sites
-1. create [001hello.html](/lecture01-git/001hello.html) in local machine
+1. create [001hello.html](/lecture01-git/001hello.html) in local machine (11:30)
 2. `git add 001hello.html`
 3. `git commit -m 'Added 001hello.html`
 4. `git status`
 5. `git push`
 
-### Case 02 Simulate if other member team has modify [002hellogitmodified.html](/lecture01-git/002hellogitmodified.html) on github sites and pull to local machine
+### Case 02 Simulate if other member team has modify [002hellogitmodified.html](/lecture01-git/002hellogitmodified.html) on github sites and pull to local machine (20:00)
 1. open [001hello.html](/lecture01-git/001hello.html) in local machine
 2. save as [002hellogitmodified.html](/lecture01-git/002hellogitmodified.html) in local machine
 3. `git add 002hellogitmodified.html`
@@ -24,18 +24,31 @@ Use Git or checkout with SVN using the web URL
 5. `git status`
 6. `git push`
 7. edit [002hellogitmodified.html]((/lecture01-git/002hellogitmodified.html)) on github sites
-8. add line `Hello World!, again second line` on github sites
+8. add line `Hello, world! again second line` on github sites
 9. click commit button
 10. `git pull`
 
-### Case 03 Simulate if conflict while other member team has modify [003hellogitconflict.html](/lecture01-git/003hellogitconflict.html) on github sites and you already modify the same file in local machine
+### Case 03 Simulate if conflict while other member team has modify [003hellogitconflict.html](/lecture01-git/003hellogitconflict.html) on github sites and you already modify the same file in local machine (22:20)
 1. open [001hello.html](/lecture01-git/001hello.html) in local machine
 2. save as [003hellogitconflict.html](/lecture01-git/003hellogitconflict.html) in local machine
 3. `git add 003hellogitconflict.html`
 4. `git commit -m 'Added 003hellogitconflict.html`
 5. `git status`
 6. `git push`
-7. edit [003hellogitconflict.html]((/lecture01-git/003hellogitconflict.html)) on github sites
-8. add line `Hello World!, again second line` on github sites
-9. click commit button
-10. `git pull`
+7. edit [003hellogitconflict.html]((/lecture01-git/003hellogitconflict.html)) in local machine
+8. add line `Hello, world! again second line from local computer` in local machine
+9. `git add 003hellogitconflict.html`
+10. `git commit -m 'Updated 003hellogitconflict.html`
+11. changes has been saved but not implemented yet on github sites
+12. edit [003hellogitconflict.html]((/lecture01-git/003hellogitconflict.html)) on github sites
+13. add line `Hello, world! again second line from github sites` on github sites
+14. click commit button
+15. changes has been saved and implemented on github sites
+16. `git pull` will return error conflict
+17. edit again [003hellogitconflict.html]((/lecture01-git/003hellogitconflict.html)) in local machine
+18. resolve the conflict line then save
+19. `git commit -am 'Updated 003hellogitconflict.html`
+20. `git push`
+
+### Case 04 `git log` and `git reset` command (27:20)
+1.

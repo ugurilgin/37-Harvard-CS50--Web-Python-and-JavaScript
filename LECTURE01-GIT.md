@@ -27,3 +27,15 @@ Use Git or checkout with SVN using the web URL
 8. add line `Hello World!, again second line` on github sites
 9. click commit button
 10. `git pull`
+
+### Case 03 Simulate if conflict while other member team has modify [003hellogitconflict.html](/lecture01-git/003hellogitconflict.html) on github sites and you already modify the same file in local machine
+1. open [001hello.html](/lecture01-git/001hello.html) in local machine
+2. save as [003hellogitconflict.html](/lecture01-git/003hellogitconflict.html) in local machine
+3. `git add 003hellogitconflict.html`
+4. `git commit -m 'Added 003hellogitconflict.html`
+5. `git status`
+6. `git push`
+7. edit [003hellogitconflict.html]((/lecture01-git/003hellogitconflict.html)) on github sites
+8. add line `Hello World!, again second line` on github sites
+9. click commit button
+10. `git pull`

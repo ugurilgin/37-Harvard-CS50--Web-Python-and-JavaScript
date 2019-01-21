@@ -24,6 +24,6 @@ Use Git or checkout with SVN using the web URL
 5. `git status`
 6. `git push`
 7. edit [002hellogitmodified.html]((/lecture01-git/002hellogitmodified.html)) on github sites
-8. add line `<pre>Hello World!, second line</pre>` on github sites
+8. add line `Hello World!, again second line` on github sites
 9. click commit button
 10. `git pull`

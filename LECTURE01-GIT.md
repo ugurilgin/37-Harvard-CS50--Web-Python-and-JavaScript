@@ -97,7 +97,7 @@ Use Git or checkout with SVN using the web URL
 01. open [012-form.html](/lecture01-git/012-form.html)
 
 ### Subject 06 DOM (59:00)
-![Document Object Model 001](/lecture01-git/DOM-model.html "Document Object Model")
+![Document Object Model 001](/lecture01-git/DOM-model.svg "Document Object Model")
 
 
 ### Reference

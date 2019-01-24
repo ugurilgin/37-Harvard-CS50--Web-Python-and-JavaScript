@@ -9,8 +9,8 @@ Use Git or checkout with SVN using the web URL
 `git clone https://github.com/ygautomo/37-Harvard-CS50--Web-Python-and-JavaScript.git`
 
 ## Lecture 01 Git
-### Case 01 Create [001-hello.html](/lecture01-git/001-hello.html) and push into github sites (11:30)
-01. create [001-hello.html](/lecture01-git/001-hello.html) in local machine
+### Case 01 Create [001-hello.html](/lecture01-git/001-hello.html) and push into github sites
+01. create [001-hello.html](/lecture01-git/001-hello.html) in local machine (11:30)
 02. `git add 001-hello.html`
 03. `git commit -m 'Added 001-hello.html'`
 04. `git status`

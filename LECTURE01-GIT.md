@@ -70,36 +70,69 @@ Use Git or checkout with SVN using the web URL
 10. `git commit -am 'Modified after reset 004-hellogitreset.html'`
 11. `git push`
 
-## Lecture 01 Git- HTML Session
-### Subject 01 HTML Tag (35:40)
+## Lecture 01 Git- HTML session
+### Subject 01 HTML tag (35:40)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
 02. save as [005-hello.html](/lecture01-git/005-hello.html) in local machine
 03. view as webpage in browser
 
-### Subject 02 Header HTML Tag (41:00)
+### Subject 02 header HTML tag (41:00)
 01. open [006-headings.html](/lecture01-git/006-headings.html)
 02. right click 'page source' menu on the browser to see actual code html file
 
-### Subject 03 Lists HTML Tag (43:50)
+### Subject 03 lists HTML tag (43:50)
 01. open [007-lists.html](/lecture01-git/007-lists.html)
 02. open [008-sublists.html](/lecture01-git/008-sublists.html)
 
-### Subject 04 Image HTML Tag (46:40)
+### Subject 04 image HTML tag (46:40)
 01. open [009-image0.html](/lecture01-git/009-image0.html)
 02. open [010-image1.html](/lecture01-git/010-image1.html) to resize the image
 02. try to resize the image
 03. try to resize the image responsively
 
-### Subject 05 Table HTML Tag (53:50)
+### Subject 05 table HTML tag (53:50)
 01. open [011-table.html](/lecture01-git/011-table.html)
 
-### Subject 05 Form HTML Tag (56:20)
+### Subject 06 form HTML tag (56:20)
 01. open [012-form.html](/lecture01-git/012-form.html)
 
-### Subject 06 DOM (59:00)
+### Subject 07 DOM (59:00)
 ![Document Object Model 001](/lecture01-git/DOM-model.svg "Document Object Model")
+
+### Subject 08 color HTML attribute (01:01:00)
+01. open [013-style0.html](/lecture01-git/013-style0.html)
+02.
+
+## Lecture 01 Git- CSS session
+### Subject 09 color HTML attribute (01:01:00)
+01. open [013-style0.html](/lecture01-git/013-style0.html)
+02. open [014-style0.html](/lecture01-git/014-style0.html)
+03. open [015-style1.html](/lecture01-git/015-style1.html)
+
+### Subject 10 CSS (01:11:00)
+01. open [016-style2.html](/lecture01-git/016-style2.html) and [styles.css](/lecture01-git/styles.css)
+
+### Subject 11 div HTML tag and background-color, margin, padding CSS properties (01:14:40)
+01. open [017-size.html](/lecture01-git/017-size.html)
+02. open [018-size.html](/lecture01-git/018-size.html)
+
+### Subject 12 div HTML tag and font-family, font-size, font-weight, and border CSS properties (01:18:00)
+01. open [019-font.html](/lecture01-git/019-font.html)
+02. open [020-border.html](/lecture01-git/020-border.html)
+
+### Subject 13 table HTML tag, table CSS element, border and border-collapse CSS properties (01:21:50)
+01. open [021-tablecss.html](/lecture01-git/021-tablecss.html)
+
+### Subject 14 div, span HTML tag, div name, span class CSS element and CSS properties (01:28:00)
+01. open [022-div_span.html](/lecture01-git/022-div_span.html)
+
+### Subject 15 Publish website to GitHub Pages (01:40:50)
+01. got to URL: https://blog.ygautomo.com/37-Harvard-CS50--Web-Python-and-JavaScript/lecture01-git/001-hello.html
 
 
 ### Reference
-[HTML Tag & Attribut](https://www.w3schools.com/tags/default.asp)
-[Document Object Model](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
+- [CSS Reference](https://www.w3schools.com/cssref/default.asp)
+- [Document Object Model](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
+- [Google Color Picker](https://www.google.com/)
+- [HTML Tag & Attribute Reference](https://www.w3schools.com/tags/default.asp)
+- [Web Color](https://en.wikipedia.org/wiki/Web_colors)

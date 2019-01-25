@@ -1,3 +1,2 @@
 # Ignore all md files
-LECTURE01-GIT.md
-LECTURE02-HTMLCSS.md
+*.md

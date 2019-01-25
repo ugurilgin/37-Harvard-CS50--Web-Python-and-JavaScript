@@ -131,12 +131,15 @@
 
 
 ### Git Command
-- `git add [Filename]`		# Add file contents to the index
-- `git clone [URL]`			# Clone a GitHub repository in [URL] into a new directory
-- `git commit -m [Comment]`	# Record changes to the repository
-- `git pull` 				# Fetch from and integrate with another repository or a local branch
-- `git push`				# Update remote refs along with associated objects
-- `git status`				# Show the working tree status
+- `git add <Filename>`			# Add file contents to the index
+- `git clone <URL>`				# Clone a GitHub repository in <URL> into a new directory
+- `git commit -m <Comment>`		# Record changes to the repository
+- `git log`						# Show commit logs
+- `git pull` 					# Fetch from and integrate with another repository or a local branch
+- `git push`					# Update remote refs along with associtated objects
+- `git reflog`					# Manage reflog information
+- `git reset --hard <commit>`	# Reset current HEAD to the specified state
+- `git status`					# Show the working tree status
 
 
 ### Reference

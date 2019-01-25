@@ -27,9 +27,13 @@ Use Git or checkout with SVN using the web URL
 14. `git checkout feature`
 15. `git branch`
 16. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see file with second line 'Here is a new feature!'
-17. 11. `git checkout master`
-12. `git branch`
-13. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
+17. `git checkout master`
+18. `git branch`
+19. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
+20. `git log` to see commit on master branch
+21. `git checkout feature`
+22. `git branch`
+23. `git log` to see commit on feature branch
 
 ### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
@@ -146,15 +150,27 @@ Use Git or checkout with SVN using the web URL
 
 
 ### Git Command
-- `git add [Filename]`		# Add file contents to the index
-- `git branch` 				# List all branches
-- `git branch [name]`		# Create branch [name]
-- `git clone [URL]`			# Clone a GitHub repository in [URL] into a new directory
-- `git checkout [name]` 	# Switch to [name] branches or restore working tree files
-- `git commit -m [Comment]`	# Record changes to the repository
-- `git pull` 				# Fetch from and integrate with another repository or a local branch
-- `git push`				# Update remote refs along with associated objects
-- `git status`				# Show the working tree status
+- `git add <Filename>`			# Add file contents to the index
+- `git branch` 					# List all branches
+- `git branch <name>`			# Create branch <name>
+- `git clone <URL>`				# Clone a GitHub repository in <URL> into a new directory
+- `git checkout <name>` 		# Switch to <name> branches or restore working tree files
+- `git commit -m <Comment>`		# Record changes to the repository
+- `git log`						# Show commit logs
+- `git pull` 					# Fetch from and integrate with another repository or a local branch
+- `git push`					# Update remote refs along with associtated objects
+- `git reflog`					# Manage reflog information
+- `git reset --hard <commit>`	# Reset current HEAD to the specified state
+- `git status`					# Show the working tree status
+### Git Command
+
+
+
+
+
+
+
+
 
 
 ### Reference

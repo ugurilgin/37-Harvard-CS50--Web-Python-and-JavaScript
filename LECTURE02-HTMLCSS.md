@@ -14,11 +14,12 @@ Use Git or checkout with SVN using the web URL
 01. create [001-index.html](/lecture02-htmlcss/001-index.html) in local machine 
 02. `git add 001-index.html`
 03. `git commit -m 'Added 001-index.html'`
-04. `git branch` 							# List all branches
-05. `git branch [name]` 					# Create branch [name]
-06. `git branch` 							# List all branches
-07. `git check out` 						# Switch branches or restore working tree files
-05. `git push`
+04. `git branch`
+05. `git branch feature`
+06. `git branch`
+07. `git checkout feature`
+08. edit [001-index.html](/lecture02-htmlcss/001-index.html) in local machine
+09. add line 'Hello, world! again second line' on github sites 
 
 ### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
@@ -139,7 +140,7 @@ Use Git or checkout with SVN using the web URL
 - `git branch` 				# List all branches
 - `git branch [name]`		# Create branch [name]
 - `git clone [URL]`			# Clone a GitHub repository in [URL] into a new directory
-- `git check out` 			# Switch branches or restore working tree files
+- `git checkout [name]` 	# Switch to [name] branches or restore working tree files
 - `git commit -m [Comment]`	# Record changes to the repository
 - `git pull` 				# Fetch from and integrate with another repository or a local branch
 - `git push`				# Update remote refs along with associated objects

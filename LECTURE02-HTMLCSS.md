@@ -19,7 +19,17 @@ Use Git or checkout with SVN using the web URL
 06. `git branch`
 07. `git checkout feature`
 08. edit [001-index.html](/lecture02-htmlcss/001-index.html) in local machine
-09. add line 'Hello, world! again second line' on github sites 
+09. add line 'Here is a new feature!' and save [001-index.html](/lecture02-htmlcss/001-index.html)
+10. `git commit -am 'Added another line on 001-index.html'`
+11. `git checkout master`
+12. `git branch`
+13. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
+14. `git checkout feature`
+15. `git branch`
+16. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see file with second line 'Here is a new feature!'
+17. 11. `git checkout master`
+12. `git branch`
+13. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
 
 ### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine

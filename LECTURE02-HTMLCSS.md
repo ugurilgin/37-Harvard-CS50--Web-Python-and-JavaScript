@@ -1,5 +1,6 @@
 # 37-Harvard-CS50--Web-Python-and-JavaScript
 ## CS50's Web Programming with Python and JavaScript
+## Lecture 02 HTML CSS
 ### Provided by Harvard University (HarvardX)
 
 ## Environment Setup
@@ -8,12 +9,15 @@ Use Git or checkout with SVN using the web URL
 
 `git clone https://github.com/ygautomo/37-Harvard-CS50--Web-Python-and-JavaScript.git`
 
-## Lecture 01 Git
-### Case 01 Create [001-hello.html](/lecture01-git/001-hello.html) and push into github sites
-01. create [001-hello.html](/lecture01-git/001-hello.html) in local machine (11:30)
-02. `git add 001-hello.html`
-03. `git commit -m 'Added 001-hello.html'`
-04. `git status`
+## Lecture 02 Git
+### Case 01 Simulate git branch command (06:20)
+01. create [001-index.html](/lecture02-htmlcss/001-index.html) in local machine 
+02. `git add 001-index.html`
+03. `git commit -m 'Added 001-index.html'`
+04. `git branch` 							# List all branches
+05. `git branch [name]` 					# Create branch [name]
+06. `git branch` 							# List all branches
+07. `git check out` 						# Switch branches or restore working tree files
 05. `git push`
 
 ### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
@@ -130,9 +134,22 @@ Use Git or checkout with SVN using the web URL
 01. got to URL: https://blog.ygautomo.com/37-Harvard-CS50--Web-Python-and-JavaScript/lecture01-git/001-hello.html
 
 
+### Git Command
+- `git add [Filename]`		# Add file contents to the index
+- `git branch` 				# List all branches
+- `git branch [name]`		# Create branch [name]
+- `git clone [URL]`			# Clone a GitHub repository in [URL] into a new directory
+- `git check out` 			# Switch branches or restore working tree files
+- `git commit -m [Comment]`	# Record changes to the repository
+- `git pull` 				# Fetch from and integrate with another repository or a local branch
+- `git push`				# Update remote refs along with associated objects
+- `git status`				# Show the working tree status
+
+
 ### Reference
 - [CSS Reference](https://www.w3schools.com/cssref/default.asp)
 - [Document Object Model](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
+- [Git Command](https://git-scm.com/)
 - [Google Color Picker](https://www.google.com/)
 - [HTML Tag & Attribute Reference](https://www.w3schools.com/tags/default.asp)
 - [Web Color](https://en.wikipedia.org/wiki/Web_colors)

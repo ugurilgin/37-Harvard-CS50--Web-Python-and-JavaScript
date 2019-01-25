@@ -34,10 +34,16 @@ Use Git or checkout with SVN using the web URL
 21. [feature] `git checkout feature`
 22. [feature] `git branch`
 23. [feature] `git log` to see commit on feature branch
+24. [feature] `git status`
+25. [feature] `git commit -am 'Update feature branch'` if any changes in the working tree status
 
 ### Case 02 Simulate git merge command on master and feature branch (10:50)
 01. [master] `git checkout master`
-02. save as [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) in local machine
+02. [master] `git merge feature`
+03. [master] `git status`
+04. [master] `git commit -am 'Merge feature branch'` if any changes in the working tree status
+05. [master] `git push`
+
 03. `git add 002-hellogitmodified.html`
 04. `git commit -m 'Added 002-hellogitmodified.html'`
 05. `git status`
@@ -150,13 +156,14 @@ Use Git or checkout with SVN using the web URL
 
 
 ### Git Command
-- `git add <Filename>`			# Add file contents to the index
+- `git add <filename>`			# Add file contents to the index
 - `git branch` 					# List all branches
 - `git branch <name>`			# Create branch <name>
 - `git clone <URL>`				# Clone a GitHub repository in <URL> into a new directory
 - `git checkout <name>` 		# Switch to <name> branches or restore working tree files
-- `git commit -m <Comment>`		# Record changes to the repository
+- `git commit -m <comment>`		# Record changes to the repository
 - `git log`						# Show commit logs
+- `git merge <name>				# Join two or more development histories together
 - `git pull` 					# Fetch from and integrate with another repository or a local branch
 - `git push`					# Update remote refs along with associtated objects
 - `git reflog`					# Manage reflog information

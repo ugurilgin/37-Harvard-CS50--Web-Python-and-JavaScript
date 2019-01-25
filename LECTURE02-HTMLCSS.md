@@ -11,32 +11,32 @@ Use Git or checkout with SVN using the web URL
 
 ## Lecture 02 Git
 ### Case 01 Simulate git branch command (06:20)
-01. create [001-index.html](/lecture02-htmlcss/001-index.html) in local machine 
-02. `git add 001-index.html`
-03. `git commit -m 'Added 001-index.html'`
-04. `git branch`
-05. `git branch feature`
-06. `git branch`
-07. `git checkout feature`
-08. edit [001-index.html](/lecture02-htmlcss/001-index.html) in local machine
-09. add line 'Here is a new feature!' and save [001-index.html](/lecture02-htmlcss/001-index.html)
-10. `git commit -am 'Added another line on 001-index.html'`
-11. `git checkout master`
-12. `git branch`
-13. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
-14. `git checkout feature`
-15. `git branch`
-16. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see file with second line 'Here is a new feature!'
-17. `git checkout master`
-18. `git branch`
-19. open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
-20. `git log` to see commit on master branch
-21. `git checkout feature`
-22. `git branch`
-23. `git log` to see commit on feature branch
+01. [master] create [001-index.html](/lecture02-htmlcss/001-index.html) in local machine
+02. [master] `git add 001-index.html`
+03. [master] `git commit -m 'Added 001-index.html'`
+04. [master] `git branch`
+05. [master] `git branch feature`
+06. [master] `git branch`
+07. [feature] `git checkout feature`
+08. [feature] edit [001-index.html](/lecture02-htmlcss/001-index.html) in local machine
+09. [feature] add line 'Here is a new feature!' and save [001-index.html](/lecture02-htmlcss/001-index.html)
+10. [feature] `git commit -am 'Added another line on 001-index.html'`
+11. [master] `git checkout master`
+12. [master] `git branch`
+13. [master] open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
+14. [feature] `git checkout feature`
+15. [feature] `git branch`
+16. [feature] open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see file with second line 'Here is a new feature!'
+17. [master] `git checkout master`
+18. [master] `git branch`
+19. [master] open [001-index.html](/lecture02-htmlcss/001-index.html) and you'll see original file without second line 'Here is a new feature!'
+20. [master] `git log` to see commit on master branch
+21. [feature] `git checkout feature`
+22. [feature] `git branch`
+23. [feature] `git log` to see commit on feature branch
 
-### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
-01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
+### Case 02 Simulate git merge command on master and feature branch (10:50)
+01. [master] `git checkout master`
 02. save as [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) in local machine
 03. `git add 002-hellogitmodified.html`
 04. `git commit -m 'Added 002-hellogitmodified.html'`

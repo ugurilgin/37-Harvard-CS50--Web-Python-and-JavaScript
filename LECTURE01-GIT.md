@@ -1,22 +1,22 @@
 # 37-Harvard-CS50--Web-Python-and-JavaScript
 ## CS50's Web Programming with Python and JavaScript
+## Lecture 01 Git
 ### Provided by Harvard University (HarvardX)
 
-## Environment Setup
-Clone with HTTPS
-Use Git or checkout with SVN using the web URL
-
-`git clone https://github.com/ygautomo/37-Harvard-CS50--Web-Python-and-JavaScript.git`
-
 ## Lecture 01 Git
-### Case 01 Create [001-hello.html](/lecture01-git/001-hello.html) and push into github sites (11:30)
+## Environment Setup
+### Case 01 Clone GitHub repository with HTTPS
+### Use Git or checkout with SVN using the web URL
+01. `git clone https://github.com/ygautomo/37-Harvard-CS50--Web-Python-and-JavaScript.git`
+
+### Case 02 Create [001-hello.html](/lecture01-git/001-hello.html) and push into github sites (11:30)
 01. create [001-hello.html](/lecture01-git/001-hello.html) in local machine
 02. `git add 001-hello.html`
 03. `git commit -m 'Added 001-hello.html'`
 04. `git status`
 05. `git push`
 
-### Case 02 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
+### Case 03 Simulate if other member team has modify [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) on github sites and pull to local machine (20:00)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
 02. save as [002-hellogitmodified.html](/lecture01-git/002-hellogitmodified.html) in local machine
 03. `git add 002-hellogitmodified.html`
@@ -28,7 +28,7 @@ Use Git or checkout with SVN using the web URL
 09. click commit button
 10. `git pull`
 
-### Case 03 Simulate if conflict while other member team has modify [003-hellogitconflict.html](/lecture01-git/003-hellogitconflict.html) on github sites and you already modify the same file in local machine (22:20)
+### Case 04 Simulate if conflict while other member team has modify [003-hellogitconflict.html](/lecture01-git/003-hellogitconflict.html) on github sites and you already modify the same file in local machine (22:20)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
 02. save as [003-hellogitconflict.html](/lecture01-git/003-hellogitconflict.html) in local machine
 03. `git add 003-hellogitconflict.html`
@@ -50,7 +50,7 @@ Use Git or checkout with SVN using the web URL
 19. `git commit -am 'Updated 003-hellogitconflict.html'`
 20. `git push`
 
-### Case 04 `git log`, `git reset` and `git reflog` command (27:20)
+### Case 05 `git log`, `git reset` and `git reflog` command (27:20)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
 02. save as [004-hellogitreset.html](/lecture01-git/004-hellogitreset.html) in local machine
 03. add line 'Hello, world! again second line from local computer first commit' in local machine
@@ -130,9 +130,19 @@ Use Git or checkout with SVN using the web URL
 01. got to URL: https://blog.ygautomo.com/37-Harvard-CS50--Web-Python-and-JavaScript/lecture01-git/001-hello.html
 
 
+### Git Command
+- `git add [Filename]`		# Add file contents to the index
+- `git clone [URL]`			# Clone a GitHub repository in [URL] into a new directory
+- `git commit -m [Comment]`	# Record changes to the repository
+- `git pull` 				# Fetch from and integrate with another repository or a local branch
+- `git push`				# Update remote refs along with associated objects
+- `git status`				# Show the working tree status
+
+
 ### Reference
 - [CSS Reference](https://www.w3schools.com/cssref/default.asp)
 - [Document Object Model](https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model)
+- [Git Command](https://git-scm.com/)
 - [Google Color Picker](https://www.google.com/)
 - [HTML Tag & Attribute Reference](https://www.w3schools.com/tags/default.asp)
 - [Web Color](https://en.wikipedia.org/wiki/Web_colors)

@@ -44,26 +44,17 @@ Use Git or checkout with SVN using the web URL
 04. [master] `git commit -am 'Merge feature branch'` if any changes in the working tree status
 05. [master] `git push`
 
-03. `git add 002-hellogitmodified.html`
-04. `git commit -m 'Added 002-hellogitmodified.html'`
-05. `git status`
-06. `git push`
-07. edit [002-hellogitmodified.html]((/lecture01-git/002-hellogitmodified.html)) on github sites
-08. add line 'Hello, world! again second line' on github sites
-09. click commit button
-10. `git pull`
-
-### Case 03 Simulate if conflict while other member team has modify [003-hellogitconflict.html](/lecture01-git/003-hellogitconflict.html) on github sites and you already modify the same file in local machine (22:20)
-01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine
-02. save as [003-hellogitconflict.html](/lecture01-git/003-hellogitconflict.html) in local machine
-03. `git add 003-hellogitconflict.html`
-04. `git commit -m 'Added 003-hellogitconflict.html'`
-05. `git status`
-06. `git push`
-07. edit [003-hellogitconflict.html]((/lecture01-git/003-hellogitconflict.html)) in local machine
-08. add line 'Hello, world! again second line from local computer' in local machine
-09. `git add 003-hellogitconflict.html`
-10. `git commit -m 'Updated 003-hellogitconflict.html'`
+### Case 03 Repeart simulation git branch command (12:00)
+01. [master] create [002-index.html](/lecture02-htmlcss/002-index.html) in local machine
+02. [master] `git branch -d feature`
+03. [master] `git commit -m "Reset initial state"
+04. [master] `git push`
+05. [master] `git pull` to reset initial state
+06. [master] `git push`
+07. [master] `git branch`
+08. [master] `git branch feature`
+09. [feature] `git checkout feature`
+10. [feature] edit [002-index.html](/lecture02-htmlcss/002-index.html) in local machine
 11. changes has been saved but not implemented yet on github sites
 12. edit [003-hellogitconflict.html]((/lecture01-git/003-hellogitconflict.html)) on github sites
 13. add line 'Hello, world! again second line from github sites' on github sites
@@ -74,6 +65,7 @@ Use Git or checkout with SVN using the web URL
 18. resolve the conflict line then save
 19. `git commit -am 'Updated 003-hellogitconflict.html'`
 20. `git push`
+21. test
 
 ### Case 04 `git log`, `git reset` and `git reflog` command (27:20)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine

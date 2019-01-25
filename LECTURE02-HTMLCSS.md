@@ -66,6 +66,7 @@ Use Git or checkout with SVN using the web URL
 19. `git commit -am 'Updated 003-hellogitconflict.html'`
 20. `git push`
 21. test
+22. test 23
 
 ### Case 04 `git log`, `git reset` and `git reflog` command (27:20)
 01. open [001-hello.html](/lecture01-git/001-hello.html) in local machine

@@ -162,15 +162,6 @@ Use Git or checkout with SVN using the web URL
 - `git reflog`					# Manage reflog information
 - `git reset --hard <commit>`	# Reset current HEAD to the specified state
 - `git status`					# Show the working tree status
-### Git Command
-
-
-
-
-
-
-
-
 
 
 ### Reference

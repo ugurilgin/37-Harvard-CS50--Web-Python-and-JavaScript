@@ -126,5 +126,6 @@ Make sure that you’ve set your `DATABASE_URL` environment variable before runn
  submit50 cs50/web/2018/x/projects/1
  ```
  instead.
+ 
 2. [Record a 1- to 5-minute screencast](https://www.howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen) in which you demonstrate your app’s functionality and/or walk viewers through your code. [Upload that video to YouTube](https://www.youtube.com/upload) (as unlisted or public, but not private) or somewhere else.
 3. [Submit this form](https://forms.cs50.io/35643afd-5a3b-4482-bcec-ddbc61af297f).

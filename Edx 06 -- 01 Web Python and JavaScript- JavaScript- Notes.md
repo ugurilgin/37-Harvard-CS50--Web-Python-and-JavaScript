@@ -10,6 +10,8 @@
 </script>
 ```
 - The previous code example, if placed in the head element, for example, would run as soon as the page is loaded. JavaScript can also be run in response to events.
+  - Now, the JavaScript code is contained inside a function. Note that the function is delimited by curly braces.
+  - The function `hello` is never called inside the `script` element. Rather, there is a `button` element with the `onclick` attribute which has the `hello` function as its value. The clicking of a button is one events that JavaScript understands which can be used as a trigger. In this case, that trigger runs the `hello` function.
 ```html
 <html>
 	<head>
@@ -26,8 +28,6 @@
 	</body>
 </html>
 ```
-  - Now, the JavaScript code is contained inside a function. Note that the function is delimited by curly braces.
-  - The function `hello` is never called inside the `script` element. Rather, there is a `button` element with the `onclick` attribute which has the `hello` function as its value. The clicking of a button is one events that JavaScript understands which can be used as a trigger. In this case, that trigger runs the `hello` function.
 - Some other JavaScript events include:
   - `onmouseover` : triggers when an element is hovered over
   - `onkeydown` : triggers when a key is pressed
@@ -36,7 +36,6 @@
   - `onblur` : triggers when an object loses focus (when moving away from an input box, for example)
 
 ## Manipulating the DOM
-- Beyond just displaying alerts, JavaScript has the power to actually change the contents of a webpage.
 ```html
 <html>
 	<head>
@@ -53,6 +52,7 @@
 	</body>
 </html>
 ```
+- Beyond just displaying alerts, JavaScript has the power to actually change the contents of a webpage.
   - `document` refers to the web page currently being displayed.
   - `querySelector('tag')` is a function that searches through the webpage for a particular CSS selector and returns that element. If there are multiple results, only the first result is returned.
     - This function can also be called as `document.querySelector('#id')` and `document.querySelector('.class')`. More sophisticated selectors, selecting only descendants of certain element,s for example, can also be used.

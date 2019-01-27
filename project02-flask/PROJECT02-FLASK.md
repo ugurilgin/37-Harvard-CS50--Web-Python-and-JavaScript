@@ -61,6 +61,12 @@ res = requests.get("https://www.goodreads.com/book/review_counts.json", params={
 print(res.json())
 [/code]
 
+```python
+import requests
+res = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "KEY", "isbns": "9781632168146"})
+print(res.json())
+```
+
 where `KEY` is your API key, will give you the review and rating data for the book with the provided ISBN number. In particular, you might see something like this dictionary:
 
 ````

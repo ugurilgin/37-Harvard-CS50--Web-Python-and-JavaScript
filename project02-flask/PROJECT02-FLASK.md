@@ -49,11 +49,17 @@ Goodreads is a popular book review website, and we’ll be using their API in th
 3. You should then see your API key. (For this project, we’ll care only about the “key”, not the “secret”.)
 4. You can now use that API key to make requests to the Goodreads API, documented [here](https://www.goodreads.com/api/index). In particular, Python code like the below
 
-````
+```
 **import** requests
 res = requests.get(<span style="color:red">"https://www.goodreads.com/book/review_counts.json"</span>, params={<span style="color:red">"key"</span>: <span style="color:red">"KEY"</span>, <span style="color:red">"isbns"</span>: <span style="color:red">"9781632168146"</span>})
 **print**(res.json())
-````
+```
+
+[code language="python"]
+import requests
+res = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "KEY", "isbns": "9781632168146"})
+print(res.json())
+[/code]
 
 where `KEY` is your API key, will give you the review and rating data for the book with the provided ISBN number. In particular, you might see something like this dictionary:
 

@@ -78,7 +78,6 @@ Note that `work_ratings_count` here is the number of ratings that this particula
 ## Requirements
 
 Alright, it’s time to actually build your web application! Here are the requirements:
-
 - **Registration**: Users should be able to register for your website, providing (at minimum) a username and password.
 - **Login**: Users, once registered, should be able to log in to your website with their username and password.
 - **Logout**: Logged in users should be able to log out of the site.
@@ -89,19 +88,21 @@ Alright, it’s time to actually build your web application! Here are the requir
 - **Goodreads Review Data**: On your book page, you should also display (if available) the average rating and number of ratings the work has received from Goodreads.
 - **API Access**: If users make a GET request to your website’s `/api/<isbn>` route, where `<isbn>` is an ISBN number, your website should return a JSON response containing the book’s title, author, publication date, ISBN number, review count, and average score. The resulting JSON should follow the format:
 
-	{
-		<span style="color:red">"title"</span>: <span style="color:red">"Memory"</span>,
-		<span style="color:red">"author"</span>: <span style="color:red">"Doug Lloyd"</span>,
-		<span style="color:red">"year"</span>: 2015</span>,
-		<span style="color:red">"isbn"</span>: <span style="color:red">"1632168146"</span>,
-		<span style="color:red">"review_count"</span>: 28</span>,
-		<span style="color:red">"average_score"</span>: 5.0</span>
-	}
+```
+{
+	"title": "Memory",
+	"author": "Doug Lloyd",
+	"year": 2015,
+	"isbn": "1632168146",
+	"review_count": 28,
+	"average_score": 5.0
+}
+```
 
 If the requested ISBN number isn’t in your database, your website should return a 404 error.
 
 - You should be using raw SQL commands (as via SQLAlchemy’s `execute` method) in order to make database queries. You should not use the SQLAlchemy ORM (if familiar with it) for this project.
-- In` README.md`, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
+- In `README.md`, include a short writeup describing your project, what’s contained in each file, and (optionally) any other additional information the staff should know about your project.
 - If you’ve added any Python packages that need to be installed in order to run your web application, be sure to add them to `requirements.txt`!
 
 Beyond these requirements, the design, look, and feel of the website are up to you! You’re also welcome to add additional features to your website, so long as you meet the requirements laid out in the above specification!
@@ -115,14 +116,14 @@ Beyond these requirements, the design, look, and feel of the website are up to y
 
 Any order is fine!
 
-`### AttributeError: 'NoneType' object has no attribute '_instantiate_plugins'`
+### `AttributeError: 'NoneType' object has no attribute '_instantiate_plugins'`
 
 Make sure that you’ve set your `DATABASE_URL` environment variable before running `flask run`!
 
 ## How to Submit
-1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/web/2018/x/projects/1` or, if you’ve installed `[submit50](https://cs50.readthedocs.io/submit50/)`, execute
+1. Using [Git](https://git-scm.com/downloads), push your work to `https://github.com/submit50/USERNAME.git`, where `USERNAME` is your GitHub username, on a branch called `cs50/web/2018/x/projects/1` or, if you’ve installed [`submit50`](https://cs50.readthedocs.io/submit50/), execute
 
-	submit50 cs50/web/2018/x/projects/1
+ `submit50 cs50/web/2018/x/projects/1`
 
  instead.
 

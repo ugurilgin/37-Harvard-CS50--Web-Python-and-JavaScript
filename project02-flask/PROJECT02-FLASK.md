@@ -28,14 +28,14 @@ Alternatively, if you install [PostgreSQL](https://www.postgresql.org/download) 
 ### Python and Flask
 
 1. First, make sure you install a copy of [Python](https://www.python.org/downloads). For this course, you should be using Python version 3.6 or higher.
-2. You’ll also need to install `pip`. If you downloaded Python from Python’s website, you likely already have `pip` installed (you can check by running pip in a terminal window). If you don’t have it installed, be sure to [install it](https://pip.pypa.io/en/stable/installing) before moving on!
+2. You’ll also need to install `pip`. If you downloaded Python from Python’s website, you likely already have `pip` installed (you can check by running `pip` in a terminal window). If you don’t have it installed, be sure to [install it](https://pip.pypa.io/en/stable/installing) before moving on!
 
 To try running your first Flask application:
 
 1. Download the `project1` distribution directory from [https://cdn.cs50.net/web/2018/spring/projects/1/project1.zip](https://cdn.cs50.net/web/2018/spring/projects/1/project1.zip) and unzip it.
 2. In a terminal window, navigate into your `project1` directory.
 3. Run `pip3 install -r requirements.txt` in your terminal window to make sure that all of the necessary Python packages (Flask and SQLAlchemy, for instance) are installed.
-4. Set the environment variable `FLASK_APP` to be `application.py`. On a Mac or on Linux, the command to do this is `export FLASK_APP=application.py`. On Windows, the command is instead set `FLASK_APP=application.py`. You may optionally want to set the environment variable `FLASK_DEBUG` to `1`, which will activate Flask’s debugger and will automatically reload your web application whenever you save a change to a file.
+4. Set the environment variable `FLASK_APP` to be `application.py`. On a Mac or on Linux, the command to do this is `export FLASK_APP=application.py`. On Windows, the command is instead 1set FLASK_APP=application.py`. You may optionally want to set the environment variable `FLASK_DEBUG` to `1`, which will activate Flask’s debugger and will automatically reload your web application whenever you save a change to a file.
 5. Set the environment variable `DATABASE_URL` to be the `URI` of your database, which you should be able to see from the credentials page on Heroku.
 6. Run `flask run` to start up your Flask application.
 7. If you navigate to the URL provided by `flask`, you should see the text `"Project 1: TODO"`!
@@ -49,25 +49,29 @@ Goodreads is a popular book review website, and we’ll be using their API in th
 3. You should then see your API key. (For this project, we’ll care only about the “key”, not the “secret”.)
 4. You can now use that API key to make requests to the Goodreads API, documented [here](https://www.goodreads.com/api/index). In particular, Python code like the below
 
-	**import** requests
-    res = requests.get(<span style="color:red">"https://www.goodreads.com/book/review_counts.json"</span>, params={<span style="color:red">"key"</span>: <span style="color:red">"KEY"</span>, <span style="color:red">"isbns"</span>: <span style="color:red">"9781632168146"</span>})
-    **print**(res.json())
+````
+**import** requests
+res = requests.get(<span style="color:red">"https://www.goodreads.com/book/review_counts.json"</span>, params={<span style="color:red">"key"</span>: <span style="color:red">"KEY"</span>, <span style="color:red">"isbns"</span>: <span style="color:red">"9781632168146"</span>})
+**print**(res.json())
+````
 
 where `KEY` is your API key, will give you the review and rating data for the book with the provided ISBN number. In particular, you might see something like this dictionary:
 
-    {<span style="color:red">'books': [{
-					<span style="color:red">'id'</span>: <span style="color:green">29207858</span>,
-					<span style="color:red">'isbn'</span>: <span style="color:red">'1632168146'</span>,
-					<span style="color:red">'isbn13'</span>: <span style="color:red">'9781632168146'</span>,
-					<span style="color:red">'ratings_count'</span>: <span style="color:green">0</span>,
-					<span style="color:red">'reviews_count'</span>: <span style="color:green">1</span>,
-					<span style="color:red">'text_reviews_count'</span>: <span style="color:green">0</span>,
-					<span style="color:red">'work_ratings_count'</span>: <span style="color:green">26</span>,
-					<span style="color:red">'work_reviews_count'</span>: <span style="color:green">113</span>,
-					<span style="color:red">'work_text_reviews_count'</span>: <span style="color:green">10</span>,
-					<span style="color:red">'average_rating'</span>: <span style="color:red">'4.04'</span>
-				}]
-	}
+````
+{<span style="color:red">'books': [{
+				<span style="color:red">'id'</span>: <span style="color:green">29207858</span>,
+				<span style="color:red">'isbn'</span>: <span style="color:red">'1632168146'</span>,
+				<span style="color:red">'isbn13'</span>: <span style="color:red">'9781632168146'</span>,
+				<span style="color:red">'ratings_count'</span>: <span style="color:green">0</span>,
+				<span style="color:red">'reviews_count'</span>: <span style="color:green">1</span>,
+				<span style="color:red">'text_reviews_count'</span>: <span style="color:green">0</span>,
+				<span style="color:red">'work_ratings_count'</span>: <span style="color:green">26</span>,
+				<span style="color:red">'work_reviews_count'</span>: <span style="color:green">113</span>,
+				<span style="color:red">'work_text_reviews_count'</span>: <span style="color:green">10</span>,
+				<span style="color:red">'average_rating'</span>: <span style="color:red">'4.04'</span>
+			}]
+}
+````
 
 Note that `work_ratings_count` here is the number of ratings that this particular book has received, and `average_rating` is the book’s average score out of 5.
 

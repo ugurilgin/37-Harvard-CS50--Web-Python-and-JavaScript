@@ -49,18 +49,6 @@ Goodreads is a popular book review website, and we’ll be using their API in th
 3. You should then see your API key. (For this project, we’ll care only about the “key”, not the “secret”.)
 4. You can now use that API key to make requests to the Goodreads API, documented [here](https://www.goodreads.com/api/index). In particular, Python code like the below
 
-```
-**import** requests
-res = requests.get(<span style="color:red">"https://www.goodreads.com/book/review_counts.json"</span>, params={<span style="color:red">"key"</span>: <span style="color:red">"KEY"</span>, <span style="color:red">"isbns"</span>: <span style="color:red">"9781632168146"</span>})
-**print**(res.json())
-```
-
-[code language="python"]
-import requests
-res = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "KEY", "isbns": "9781632168146"})
-print(res.json())
-[/code]
-
 ```python
 import requests
 res = requests.get("https://www.goodreads.com/book/review_counts.json", params={"key": "KEY", "isbns": "9781632168146"})
@@ -69,21 +57,21 @@ print(res.json())
 
 where `KEY` is your API key, will give you the review and rating data for the book with the provided ISBN number. In particular, you might see something like this dictionary:
 
-````
-{<span style="color:red">'books': [{
-				<span style="color:red">'id'</span>: <span style="color:green">29207858</span>,
-				<span style="color:red">'isbn'</span>: <span style="color:red">'1632168146'</span>,
-				<span style="color:red">'isbn13'</span>: <span style="color:red">'9781632168146'</span>,
-				<span style="color:red">'ratings_count'</span>: <span style="color:green">0</span>,
-				<span style="color:red">'reviews_count'</span>: <span style="color:green">1</span>,
-				<span style="color:red">'text_reviews_count'</span>: <span style="color:green">0</span>,
-				<span style="color:red">'work_ratings_count'</span>: <span style="color:green">26</span>,
-				<span style="color:red">'work_reviews_count'</span>: <span style="color:green">113</span>,
-				<span style="color:red">'work_text_reviews_count'</span>: <span style="color:green">10</span>,
-				<span style="color:red">'average_rating'</span>: <span style="color:red">'4.04'</span>
+```python
+{'books': [{
+				'id': 29207858,
+				'isbn': '1632168146',
+				'isbn13': '9781632168146',
+				'ratings_count': 0,
+				'reviews_count': 1,
+				'text_reviews_count': 0,
+				'work_ratings_count': 26,
+				'work_reviews_count': 113,
+				'work_text_reviews_count': 10,
+				'average_rating': '4.04'
 			}]
 }
-````
+```
 
 Note that `work_ratings_count` here is the number of ratings that this particular book has received, and `average_rating` is the book’s average score out of 5.
 
@@ -104,10 +92,10 @@ Alright, it’s time to actually build your web application! Here are the requir
 	{
 		<span style="color:red">"title"</span>: <span style="color:red">"Memory"</span>,
 		<span style="color:red">"author"</span>: <span style="color:red">"Doug Lloyd"</span>,
-		<span style="color:red">"year"</span>: <span style="color:green">2015</span>,
+		<span style="color:red">"year"</span>: 2015</span>,
 		<span style="color:red">"isbn"</span>: <span style="color:red">"1632168146"</span>,
-		<span style="color:red">"review_count"</span>: <span style="color:green">28</span>,
-		<span style="color:red">"average_score"</span>: <span style="color:green">5.0</span>
+		<span style="color:red">"review_count"</span>: 28</span>,
+		<span style="color:red">"average_score"</span>: 5.0</span>
 	}
 
 If the requested ISBN number isn’t in your database, your website should return a 404 error.

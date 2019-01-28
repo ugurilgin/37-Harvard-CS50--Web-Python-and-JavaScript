@@ -84,15 +84,53 @@
 06. open [012-modules.py](/lecture03-flask/012-modules.py) and upload to server
 07. `python 012-modules.py` on server
 
-### Subject 06 Python class (36:00)
+### Subject 06 Python class 7 decorators (36:00)
 01. open [013-classes.py](/lecture03-flask/013-classes.py) and upload to server
 02. `python 013-classes.py` on server
+03. open [014-decorators.py](/lecture03-flask/014-decorators.py) and upload to server
+04. `python 014-decorators.py` on server
 
 ## Lecture 03 Flask- HTTP session (39:00)
-### Subject 02 datalist HTML tag (33:00)
-01. open [004-form.html](/lecture03-flask/004-form.html)
-02. fill the form and try auto complete on combo box country
+### Running Flask Application
+In order to run Flask Application, you should.
+01. `export FLASK_APP=/home/[user_id]/work/[directory]/[filename.py]`
+	`flask run --host=0.0.0.0` on server
+02. access web server on http://[website]:5000
 
+### Subject 01 Flask hello world simple program (40:20)
+01. open [application.py](/lecture03-flask/015-first/application.py) and upload to server
+
+### Subject 02 Flask routing and variable rules (47:00)
+01. open [application.py](/lecture03-flask/016-routes0/application.py) and upload to server
+02. open [application.py](/lecture03-flask/017-routes1/application.py) and upload to server
+
+### Subject 03 Flask rendering html templates, combine with Flask routing and variable rules (53:20)
+01. open [application.py](/lecture03-flask/018-templates/application.py) and upload to server
+02. open [application.py](/lecture03-flask/019-variables0/application.py) and upload to server
+03. open [application.py](/lecture03-flask/020-variables0/application.py) and upload to server
+04. open [application.py](/lecture03-flask/021-variables0/application.py) and upload to server
+05. open [application.py](/lecture03-flask/022-variables1/application.py) and upload to server
+
+### Subject 04 Flask rendering html templates with conditions (01:03:00)
+01. open [application.py](/lecture03-flask/023-conditions/application.py) and upload to server
+
+### Subject 05 Flask rendering html templates with loops (01:11:30)
+01. open [application.py](/lecture03-flask/024-loops/application.py) and upload to server
+
+### Subject 06 Flask rendering html templates with links & html template inheritance (01:14:10)
+01. open [application.py](/lecture03-flask/025-urls/application.py) and upload to server
+02. open [application.py](/lecture03-flask/026-inheritance/application.py) and upload to server
+
+### Subject 07 Flask rendering html templates with user input form (01:22:30)
+01. open [application.py](/lecture03-flask/027-forms/application.py) and upload to server
+
+### Subject 06 Flask session (01:32:40)
+01. open [application.py](/lecture03-flask/028-notes/application.py) and upload to server
+02. open [application.py](/lecture03-flask/029-notessession/application.py) and upload to server
+
+### Notes
+- Error: IndentationError: unindent does not match any outer indentation level
+	You should check mixed up tabs and spaces in code editor
 
 ### Python Command
 - `python <filename>`			# Run python program
@@ -116,6 +154,9 @@
 
 
 ### Reference
+- [Is it christmas](https://isitchristmas.com/)
+
+
 - [Bootstrap](https://getbootstrap.com/)
 - [CSS Reference](https://www.w3schools.com/cssref/default.asp)
 - [CSS Selector](https://www.w3schools.com/cssref/css_selectors.asp)

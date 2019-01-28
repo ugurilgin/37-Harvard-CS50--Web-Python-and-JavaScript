@@ -52,6 +52,7 @@
 	</body>
 </html>
 ```
+========== NOTE BARU SAMPAI SINI ==========
 - Beyond just displaying alerts, JavaScript has the power to actually change the contents of a webpage.
   - `document` refers to the web page currently being displayed.
   - `querySelector('tag')` is a function that searches through the webpage for a particular CSS selector and returns that element. If there are multiple results, only the first result is returned.
